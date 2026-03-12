@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmosphere | Premium Weather</title>
+    <meta name="description" content="A beautiful and responsive weather application.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    
+    <div class="container">
+        <div class="weather-card">
+            <header class="card-header">
+                <h2>Atmosphere</h2>
+                <div class="search-wrapper">
+                    <div class="search-box">
+                        <input type="text" id="city-input" placeholder="Search for a city..." autocomplete="off">
+                        <button id="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <ul class="suggestions-list" id="suggestions-list"></ul>
+                </div>
+            </header>
+
+            <main class="weather-content" id="weather-content">
+                <div class="initial-message">
+                    <i class="fas fa-cloud-sun"></i>
+                    <p>Enter a city name to get the current weather.</p>
+                </div>
+            </main>
+            
+            <div class="loader" id="loader">
+                <div class="spinner"></div>
+            </div>
+            
+            <div class="error-message" id="error-message">
+                <i class="fas fa-exclamation-circle"></i>
+                <p id="error-text">City not found.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
